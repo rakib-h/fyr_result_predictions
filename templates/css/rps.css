@@ -1,0 +1,51 @@
+body {
+	background-color: #d9d5cc;
+	padding-top: 5px;
+}
+.starter-template {
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: center;
+
+}
+
+
+
+/* Custom page footer */
+.footer
+ {
+  padding-top: 5px;
+  color: black;
+  border-top: 1px solid white;
+}
+
+/* Customize container */
+@media (min-width: 1068px) {
+  .container {
+    max-width: 1060px;
+  }
+}
+
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 20;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+}

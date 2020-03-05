@@ -1,0 +1,20 @@
+CTM= What is your Class Test Marks?
+CA= How is your Class Attendence?
+AS= Do you complete your Assignment in the mean time?
+LP= How is your Lab Performance?
+FES= Is your Family Educated?
+Resi= Where are you living?
+ECA= Are you involve any ExtraCurricular Activities?
+DA= Are you Addicted with Drug?
+RS= Have you involve in any Relationship?
+FS= Are you involve in any Friendship?
+FcS= Are you get any Financial Support from your family?
+PI= Are you Involve any Political party?
+RWF= Your Relationships With your Faculty -
+JTF= Are you doing any Tob/Tuition or Freelancing?
+SH= How much time you spent perfectly for your Study in a day (in Hours)?
+SM= How much time did you spend on Social Media (in hours)?
+LS= What is your last semester result?
+FYR= Your Final Year Result-
+
+

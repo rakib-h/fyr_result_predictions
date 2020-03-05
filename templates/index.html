@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--<link href="css/rps.css" rel="stylesheet">-->
+  <title>Profit Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">FYR Predictions using Machine Learning</font></div></h1>
+    <hr>
+
+    </br>
+    <h2><div style="text-align:center">Enter 1 if the state selected is New York else enter 0</div></h2>
+    </br><br>
+ <!-- CTM_Average,CTM_Bad,CTM_Good,CA_Average,CA_Bad,CA_Good,AS_No,AS_Yes,RWF_Average, #9
+            RWF_Bad,RWF_Good,LP_Average,LP_Bad,LP_Good,FES_No,FES_Yes,R_In_Dhaka_City,R_Outside_Dhaka_City, #9
+            SH,SM,ECA_No,ECA_Yes,DA_No,DA_Yes,RS_NO,RS_Yes,FS_No,FS_Yes,FcS_No,FcS_Yes,PI_No,PI_Yes,JTF_No,JTF_Yes,LS]-->
+
+    <div class='container'>  
+          <form method="POST" action="/predict">
+            <div class="col-lg-6">  
+            <h4><b>What is your class test marks?</b></h4>       
+              <label for="CTM_Average" ><p>Average</p></label>
+              <input type="text" name="CTM_Average">
+              <br>
+        
+              <label for="CTM_Bad"><p>Bad</p></label>
+              <input type="text" name="CTM_Bad">
+              <br>
+        
+              <label for="CTM_Good"><p>Good</p></label>
+              <input type="text" name="CTM_Good">
+              
+              </div>
+             
+
+              <div class="col-lg-6"> 
+                <h4><b>What is your class test marks?</b></h4>        
+              <label for="CA_Average"><p>Average</p></label>
+              <input type="text" name="CA_Average">
+              <br>
+        
+              <label for="CA_Bad"><p>Bad</p></label>
+              <input type="text" name="CA_Bad">
+              <br>
+              <label for="CA_Good"><p>Good</p></label>
+              <input type="text" name="CA_Good">
+              </div>
+             
+           
+              <div class="col-lg-6">
+              <h4><b>Do you complete your assignment in the mean time?</b></h4>         
+              <label for="AS_No"><p>No</p></label>
+              <input type="text" name="AS_No">
+              <br>
+              <label for="AS_Yes"><p>Yes</p></label>
+              <input type="text" name="AS_Yes">
+              
+              </div>
+
+    
+
+                   <!-- This line is not be serialized 
+
+                  <div class="col-lg-6">
+                      <h4><b>Your relationships with your faculty -</b></h4>
+                    <label for="RWF_Average"><p >Average</p></label>
+                    <input type="text" name="RWF_Average">
+
+                    <br>
+                      <label for="RWF_Bad"><p>Bad</p></label>
+                      <input type="text" name="RWF_Bad">
+                      <br>
+                    
+
+                    <label for="RWF_Good"><p >Good</p></label>
+                    <input type="text" name="RWF_Good">
+             
+                    
+                    </div>  -->
+
+              <div class="col-lg-6">
+                <h4><b>How is your lab performance?</b></h4> 
+                
+              <label for="LP_Average"><p>Average</p></label>
+              <input type="text" name="LP_Average">
+              <br>
+                                   
+              <label for="LP_Bad"><p>Bad</p></label>
+              <input type="text" name="LP_Bad">
+              <br>
+                      
+              <label for="LP_Good"><p>Good</p></label>
+              <input type="text" name="LP_Good">
+              
+              </div>
+
+              <!-- This line is not be serialized 
+
+
+
+
+              <div class="col-lg-6">
+              <h4><b>Do you complete your assignment in the mean time?</b></h4>         
+              <label for="AS_No"><p>No</p></label>
+              <input type="text" name="AS_No">
+              <br>
+              <label for="AS_Yes"><p>Yes</p></label>
+              <input type="text" name="AS_Yes">
+              
+              </div>  -->
+              
+              <div class="col-lg-6">
+              <h4><b>Is your family educated??</b></h4>         
+              <label for="FES_No"><p>No</p></label>
+              <input type="text" name="FES_No">
+              <br>
+
+              <label for="FES_Yes"><p class="font-weight-bold">Yes</p></label>
+              <input type="text" name="FES_Yes">
+              
+              </div>
+              
+
+              <div class="col-lg-6"> 
+              <h4><b>Where are you living??</b></h4>        
+              <label for="R_In_Dhaka_City"><p>In Dhaka</p></label>
+              <input type="text" name="R_In_Dhaka_City">
+              <br>
+
+              <label for="R_Outside_Dhaka_City"><p>Outside Dhaka</p></label>
+              <input type="text" name="R_Outside_Dhaka_City">
+
+              </div>
+              
+
+              <div class="col-lg-6">
+                <h4><b>How much time you spent perfectly for your study in a day (in hours)?</b></h4>
+                <label for="SH"> </label>
+                <input type="text" name="SH">
+                <br>
+
+                <h4><b>How much time did you spend on social media (in hours)?</b></h4>
+              <label for="SM"> </label>
+              <input type="text" name="SM">
+              </div>
+             
+          
+               <div class="col-lg-6">
+                <h4><b>Are you involve any extracurricular activities?</b></h4>
+                    <label for="ECA_No"><p >No</p></label>
+                    <input type="text" name="ECA_No">
+
+                    <br>
+                      <label for="ECA_Yes"><p >Yes</p></label>
+                      <input type="text" name="ECA_Yes">
+
+                    </div>
+                   
+
+
+                  <div class="col-lg-6">
+                    <h4><b>Are you addicted with drug?</b></h4>
+                    <label for="DA_No"><p>No</p></label>
+                    <input type="text" name="DA_No">
+
+                    <br>
+                      <label for="DA_Yes"><p>Yes</p></label>
+                      <input type="text" name="DA_Yes">
+
+                    </div>
+                      
+
+                  <div class="col-lg-6">
+                      <h4><b>Have you involve in any relationship?</b></h4>
+                        
+                    <label for="RS_NO"><p >NO</p></label>
+                    <input type="text" name="RS_NO">
+
+                    <br>
+                      <label for="RS_Yes"><p >No</p></label>
+                      <input type="text" name="RS_Yes">
+
+                    </div>
+                      
+
+                      
+                    <div class="col-lg-6">
+                        <h4><b> Are you involve in any friendship?</b></h4>
+                       
+                    <label for="FS_No"><p >No</p></label>
+                    <input type="text" name="FS_No">
+
+                    <br>
+                      <label for="FS_Yes"><p>Yes</p></label>
+                      <input type="text" name="FS_Yes">
+
+                    </div>
+                      
+
+                       <div class="col-lg-6">
+                         <h4><b>Are you get any financial support from your family?</b></h4>
+                    <label for="FcS_No"><p>No</p></label>
+                    <input type="text" name="FcS_No"><br>
+
+
+                      <label for="FcS_Yes"><p>Yes</p></label>
+                      <input type="text" name="FcS_Yes">
+   
+                    </div>
+                     
+
+
+                    <div class="col-lg-6">
+                        <h4><b>Are you involve any political party?</b></h4>
+                        
+                    <label for="PI_No"><p>No</p></label>
+                    <input type="text" name="PI_No">
+
+                    <br>
+                      <label for="PI_Yes"><p></p></label>
+                      <input type="text" name="PI_Yes">
+
+                    </div>
+
+            
+                     <div class="col-lg-6">
+                      <h4><b>Your relationships with your faculty -</b></h4>
+                    <label for="RWF_Average"><p >Average</p></label>
+                    <input type="text" name="RWF_Average">
+
+                    <br>
+                      <label for="RWF_Bad"><p>Bad</p></label>
+                      <input type="text" name="RWF_Bad">
+                      <br>
+                    
+
+                    <label for="RWF_Good"><p >Good</p></label>
+                    <input type="text" name="RWF_Good">
+             
+                    
+                    </div>
+
+                
+                   
+                    <div class="col-lg-6">
+                      <h4><b>Are you doing any job/tuition or freelancing?</b></h4>
+                      
+                      <label for="JTF_No"><p>No</p></label>
+                      <input type="text" name="JTF_No">
+                      <br>
+          
+                    <label for="JTF_Yes"><p>Yes</p></label>
+                    <input type="text" name="JTF_Yes">
+                    </div>
+
+                    
+                    <div class="col-lg-6">
+                      <h4><b>What is your last semester result?</b></h4>
+                      
+                      <label for="LS"></label>
+                      <input type="text" name="LS">
+                       <br>
+                    </div>
+                    
+
+                    
+                <input type='submit' value='Submit'>
+            </form>
+ 
+         </div>
+ 
+         
+  </body>
+
+</html>
